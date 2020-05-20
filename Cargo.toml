@@ -16,10 +16,7 @@ uinput-sys = "0.1"
 
 custom_derive = "0.1"
 enum_derive   = "0.1"
-
-[dependencies.libudev]
-optional = true
-version  = "0.2"
+libudev = {version = "0.2", git="https://github.com/BrianHoldsworth/libudev-rs.git", optional=true}
 
 [features]
 default = ["udev"]
